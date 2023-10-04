@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<NotificationSender> notificationSenders = new ArrayList<>();
+        List<NotificationSender> notificationSenders = new ArrayList();
         notificationSenders.add(new EmailNotificationSender());
         notificationSenders.add(new SlackNotificationSender());
         notificationSenders.add(new WpNotificationSender());
