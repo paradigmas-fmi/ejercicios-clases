@@ -10,13 +10,28 @@ public class Alumno {
         this.padron = padron;
     }
 
-    public boolean consultar(List<DeptoFiuba> posiblesDestinos, String consulta) {
+    public void consultarFechas(List<DeptoFiuba> posiblesDestinos) {
         for (DeptoFiuba destino : posiblesDestinos) {
-            if (destino.consultar(this.padron, consulta)) {
-                return true;
+            if (destino.consultar(this.padron, "Quiero saber...?")) {
+                return;
             }
         }
-        return false;
+    }
+
+    public void consultarTramites(List<DeptoFiuba> posiblesDestinos) {
+        for (DeptoFiuba destino : posiblesDestinos) {
+            if (destino.consultar(this.padron, "Quiero saber...?")) {
+                return;
+            }
+        }
+    }
+
+    public void consultarTemaAdministrativo(List<DeptoFiuba> posiblesDestinos) {
+        for (DeptoFiuba destino : posiblesDestinos) {
+            if (destino.consultar(this.padron, "Quiero saber...?")) {
+                return;
+            }
+        }
     }
 
 }

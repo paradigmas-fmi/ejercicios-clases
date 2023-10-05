@@ -1,11 +1,5 @@
 package org.example.ejercicio8;
 
-import com.sun.tools.javac.util.List;
-import org.example.ejercicio7.Expresion;
-import org.example.ejercicio7.Multiplicacion;
-import org.example.ejercicio7.ProcesadorMatematico;
-import org.example.ejercicio7.Suma;
-
 public class Main {
     public static void main(String[] args) {
         AgenciaDeTurismoLocal agenciaDeTurismo = new AgenciaDeTurismoLocal();
@@ -14,5 +8,10 @@ public class Main {
 
         dimitri.elegirDestino(agenciaDeTurismo);
         cacho.elegirLugarParaComer(agenciaDeTurismo);
+
+        TuristaDePaquetes familiaJohnson = new TuristaDePaquetes();
+        // Esta agencia va a cerrar y los turistas de paquetes quedan a la deriva
+        EmpaquetadorTuristico agenciaPaquetes = new AgenciaDeTurismoDePaquetesObsoleta();
+        familiaJohnson.obtenerPaquete(agenciaPaquetes);
     }
 }

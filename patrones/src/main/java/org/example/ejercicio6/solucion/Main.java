@@ -1,4 +1,4 @@
-package org.example.ejercicio6;
+package org.example.ejercicio6.solucion;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ public class Main {
         DepartamentoDeAlumnos departamentoDeAlumnos = new DepartamentoDeAlumnos();
         SecretariaAcademica secretariaAcademica = new SecretariaAcademica();
         Tesoreria tesoreria = new Tesoreria();
+        AyudaFiuba centroDeAyuda = new BotiFiuba(departamentoDeAlumnos, secretariaAcademica, tesoreria);
 
-        List<DeptoFiuba> posiblesDestinos = of(departamentoDeAlumnos, secretariaAcademica, tesoreria);
-        alumno.consultarFechas(posiblesDestinos);
+        alumno.consultarFechas(centroDeAyuda);
     }
 }

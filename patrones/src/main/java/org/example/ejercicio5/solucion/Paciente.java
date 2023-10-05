@@ -1,4 +1,4 @@
-package org.example.ejercicio5;
+package org.example.ejercicio5.solucion;
 
 public class Paciente {
     private boolean dolorDeCabeza;

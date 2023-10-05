@@ -1,10 +1,4 @@
-package org.example.ejercicio5;
-
-import org.example.ejercicio3.Sandwich;
-import org.example.ejercicio3.*;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package org.example.ejercicio5.solucion;
 
 public class Main {
     public static void main(String[] args) {

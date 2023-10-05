@@ -1,4 +1,4 @@
-package org.example.ejercicio8;
+package org.example.ejercicio8.solucion;
 
 import java.util.Arrays;
 import java.util.List;
