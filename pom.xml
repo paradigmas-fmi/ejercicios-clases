@@ -7,11 +7,13 @@
     <groupId>org.fiuba.algo3</groupId>
     <artifactId>ejercicios-clases</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>patrones</module>
         <module>principios</module>
         <module>tatedrez</module>
+        <module>testing</module>
     </modules>
 
     <properties>
