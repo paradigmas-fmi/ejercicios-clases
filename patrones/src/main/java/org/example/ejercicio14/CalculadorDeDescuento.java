@@ -1,21 +1,22 @@
 package org.example.ejercicio14;
 
 public class CalculadorDeDescuento {
-    public Double calcularDescuento(Double montoTotal, Membresia membresia) {
+    public void aplicarDescuento(Compra compra, Membresia membresia) {
         Double descuento = 0.0;
-        if (montoTotal > 1000) {
-            descuento = montoTotal * 0.2;
-            System.out.println("Descuento del Viernes Negro Aplicado");
+        Double costo = compra.getCosto();
+        if (costo > 1000) {
+            descuento = costo * 0.2;
+            System.out.println("Descuento por monto");
         } else if (membresia == Membresia.BLACK) {
-            descuento = montoTotal * 0.15;
-            System.out.println("Descuento de Lealtad Aplicado");
+            descuento = costo * 0.15;
+            System.out.println("Descuento por black");
         } else if (membresia == Membresia.GOLD || membresia == Membresia.SILVER) {
-            descuento = montoTotal * 0.1;
-            System.out.println("Descuento de Membresía Aplicado");
+            descuento = costo * 0.1;
+            System.out.println("Descuento por membresia");
         } else {
             System.out.println("No se Aplicó Descuento");
         }
-        return descuento;
+        compra.setCosto(costo - descuento);
     }
 
 }
