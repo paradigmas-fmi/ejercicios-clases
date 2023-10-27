@@ -1,4 +1,4 @@
-package org.example.view;
+package org.example.view.console;
 
 import org.example.model.Alfil;
 import org.example.model.Caballo;

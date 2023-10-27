@@ -1,7 +1,7 @@
 package org.example;
 
 import org.example.model.Juego;
-import org.example.view.JuegoView;
+import org.example.view.console.JuegoView;
 import org.jline.reader.LineReader;
 import org.jline.reader.LineReaderBuilder;
 import org.jline.terminal.Terminal;

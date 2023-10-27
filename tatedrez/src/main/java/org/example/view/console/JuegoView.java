@@ -1,4 +1,4 @@
-package org.example.view;
+package org.example.view.console;
 
 import org.example.model.Juego;
 import org.example.model.Jugador;
