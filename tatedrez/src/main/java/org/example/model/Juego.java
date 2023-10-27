@@ -67,4 +67,13 @@ public class Juego {
                 p1[0] == p2[0] && p2[0] == p3[0] && p1[1] == p2[1]+1 && p2[1] == p3[1]+1 || // Verticales
                 p1[0] == p2[0] && p2[0] == p3[0] && p1[1] == p2[1]-1 && p2[1] == p3[1]-1;
     }
+
+    public void setAdministradorDeMovimientos(AdministradorDeMovimientos adminDeMovimientos) {
+        this.administradorDeMovimientos = adminDeMovimientos;
+    }
+
+
+    public void setAdministradorDeTurnos(AdministradorDeTurnos adminDeTurnos) {
+        this.administradorDeTurnos = adminDeTurnos;
+    }
 }
