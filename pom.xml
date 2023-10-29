@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>excepciones</module>
         <module>patrones</module>
         <module>principios</module>
         <module>tatedrez</module>
