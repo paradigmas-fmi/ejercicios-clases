@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.JuegoController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="89.0" prefWidth="600.0" text="Ta Te Drez">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="jugador1" prefHeight="17.0" prefWidth="616.0" />
+            <Label fx:id="jugador2" prefHeight="17.0" prefWidth="611.0" />
+         </children>
+      </VBox>
+      <fx:include fx:id="tablero" source="tablero-view.fxml" />
+   </children>
+</VBox>

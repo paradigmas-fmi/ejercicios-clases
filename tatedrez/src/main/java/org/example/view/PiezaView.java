@@ -1,4 +1,4 @@
-package org.example.view.console;
+package org.example.view;
 
 import org.example.model.Pieza;
 
