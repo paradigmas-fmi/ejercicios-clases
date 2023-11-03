@@ -2,11 +2,13 @@ package org.example;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.example.controller.CambioDeTurnoEvent;
 import org.example.controller.JuegoController;
 import org.example.model.*;
 
@@ -35,7 +37,9 @@ public class MainJavaFx extends Application {
         JuegoController juegoController = loader.getController();
         juegoController.setJuego(juego);
 
-        Scene scene = new Scene(root, 640, 480);
+        root.addEventHandler(CambioDeTurnoEvent.CAMBIO_DE_TURNO_EVENT, juegoController);
+
+        Scene scene = new Scene(root, 640, 700);
         stage.setScene(scene);
 
         stage.show();

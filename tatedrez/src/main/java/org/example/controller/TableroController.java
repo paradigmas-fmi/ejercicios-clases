@@ -1,5 +1,9 @@
 package org.example.controller;
 
+import javafx.event.Event;
+import javafx.event.EventHandler;
+import javafx.event.EventTarget;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.image.ImageView;
@@ -11,6 +15,7 @@ import org.example.model.Juego;
 import org.example.model.Tablero;
 
 import java.util.Optional;
+import java.util.Queue;
 
 public class TableroController {
 
@@ -72,7 +77,7 @@ public class TableroController {
             if (resultado) {
                 ImageView imageView = (ImageView) this.posiciones[this.oi][this.oj].getChildren().remove(1);
                 this.posiciones[i][j].getChildren().add(imageView);
-                this.juego.cambiarTurno();
+                tableroGrid.fireEvent(new CambioDeTurnoEvent());
             }
             this.oi = null;
             this.oj = null;
