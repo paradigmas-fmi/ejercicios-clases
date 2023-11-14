@@ -1,18 +1,24 @@
 package org.example;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.example.controller.CambioDeTurnoEvent;
+import org.example.controller.JuegoController;
 import org.example.model.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
+public class MainJavaFx extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
         Jugador j1 = new Jugador("Mati", Config.ColoresJugadores.BLANCO);
         Jugador j2 = new Jugador("Nacho", Config.ColoresJugadores.NEGRO);
         Juego juego = new Juego(List.of(j1, j2));
@@ -25,12 +31,17 @@ public class Main {
         juego.setPieza(new Torre(Config.ColoresJugadores.BLANCO), 2, 1);
         juego.setPieza(new Alfil(Config.ColoresJugadores.NEGRO), 2, 2);
 
-        JuegoController juegoController = new JuegoController(juego);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("juego-view.fxml"));
+        VBox root = loader.load();
 
-        while (!juego.terminado()) {
-            juegoController.jugarTurno();
-        }
+        JuegoController juegoController = loader.getController();
+        juegoController.setJuego(juego);
 
-        System.out.println("Juego terminado!");
+        root.addEventHandler(CambioDeTurnoEvent.CAMBIO_DE_TURNO_EVENT, juegoController);
+
+        Scene scene = new Scene(root, 640, 700);
+        stage.setScene(scene);
+
+        stage.show();
     }
 }

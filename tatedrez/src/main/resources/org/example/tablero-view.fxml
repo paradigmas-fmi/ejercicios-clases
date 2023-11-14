@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<GridPane fx:id="tableroGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TableroController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <StackPane onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="1" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="2" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.rowIndex="1" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="2" GridPane.rowIndex="1" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.rowIndex="2" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="1" GridPane.rowIndex="2" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+      <StackPane GridPane.columnIndex="2" GridPane.rowIndex="2" onMouseClicked="#handleMouseClicked">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
