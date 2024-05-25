@@ -1,11 +1,11 @@
 package ejemplo3;
 
-public class Banco {
+public class CuentaBancaria {
     private int cuentaPesos;
     private int cuentaUsds;
     private static int CONVERSION = 800;
 
-    public Banco(int pesos, int usds) {
+    public CuentaBancaria(int pesos, int usds) {
         this.cuentaPesos = pesos;
         this.cuentaUsds = usds;
     }
