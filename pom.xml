@@ -13,6 +13,8 @@
         <module>concurrencia</module>
         <module>excepciones</module>
         <module>patrones</module>
+        <module>persistencia</module>
+        <module>poe</module>
         <module>principios</module>
         <module>tatedrez</module>
         <module>testing</module>
