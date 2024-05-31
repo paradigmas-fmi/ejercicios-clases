@@ -1,4 +1,4 @@
-package ejemplo3;
+package ej3cuentaBancaria;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ejemplo3;
+package ej3cuentaBancaria;
 
 public class CuentaBancaria {
     private int cuentaPesos;

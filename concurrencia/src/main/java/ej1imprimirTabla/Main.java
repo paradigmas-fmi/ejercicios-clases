@@ -1,4 +1,4 @@
-package ejemplo1;
+package ej1imprimirTabla;
 
 public class Main {
 

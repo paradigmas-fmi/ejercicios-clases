@@ -1,15 +1,15 @@
-package ejemplo2;
+package ej2simulacionDados;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class SimulacionDados implements Runnable {
+public class SimulacionDadosThread extends Thread {
 
     private int cantDados;
     private int tiradas;
 
-    public SimulacionDados(int cantDados, int tiradas) {
+    public SimulacionDadosThread(int cantDados, int tiradas) {
         this.cantDados = cantDados;
         this.tiradas = tiradas;
     }
