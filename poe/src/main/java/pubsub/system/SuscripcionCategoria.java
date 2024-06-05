@@ -1,4 +1,4 @@
-package pubsub.pub;
+package pubsub.system;
 
 import pubsub.modelo.Noticia;
 import pubsub.sub.Suscriptor;

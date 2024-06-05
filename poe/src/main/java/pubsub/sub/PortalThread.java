@@ -1,7 +1,6 @@
 package pubsub.sub;
 
 import pubsub.modelo.Noticia;
-import pubsub.sub.Suscriptor;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
