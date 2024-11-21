@@ -1,4 +1,4 @@
-package ejemploDocJava;
+package tradicional.ejemploDocJava;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package ej3cuentaBancaria;
+package tradicional.ej3cuentaBancaria;
 
 import java.util.List;
 

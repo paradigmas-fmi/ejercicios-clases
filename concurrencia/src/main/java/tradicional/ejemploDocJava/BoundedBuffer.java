@@ -1,4 +1,4 @@
-package ejemploDocJava;
+package tradicional.ejemploDocJava;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

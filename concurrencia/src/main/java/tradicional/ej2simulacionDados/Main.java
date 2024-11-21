@@ -1,4 +1,4 @@
-package ej2simulacionDados;
+package tradicional.ej2simulacionDados;
 
 public class Main {
 

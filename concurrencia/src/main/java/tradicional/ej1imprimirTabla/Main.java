@@ -1,4 +1,4 @@
-package ej1imprimirTabla;
+package tradicional.ej1imprimirTabla;
 
 public class Main {
 
