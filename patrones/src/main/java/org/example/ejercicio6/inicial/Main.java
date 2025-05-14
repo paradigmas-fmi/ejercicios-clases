@@ -1,4 +1,6 @@
-package org.example.ejercicio6.solucion;
+package org.example.ejercicio6.inicial;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,8 +8,8 @@ public class Main {
         DepartamentoDeAlumnos departamentoDeAlumnos = new DepartamentoDeAlumnos();
         SecretariaAcademica secretariaAcademica = new SecretariaAcademica();
         Tesoreria tesoreria = new Tesoreria();
-        AyudaFiuba centroDeAyuda = new BotiFiuba(departamentoDeAlumnos, secretariaAcademica, tesoreria);
 
-        alumno.consultarFechas(centroDeAyuda);
+        List<DeptoFiuba> posiblesDestinos = List.of(departamentoDeAlumnos, secretariaAcademica, tesoreria);
+        alumno.consultarFechas(posiblesDestinos);
     }
 }

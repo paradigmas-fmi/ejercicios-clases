@@ -1,13 +1,23 @@
 package org.example.ejercicio10.solucion;
 
-public class EditorDeTexto {
-    private Comando comando;
+import java.util.HashMap;
+import java.util.Map;
 
-    public void setComando(Comando comando) {
-        this.comando = comando;
+public class EditorDeTexto {
+    private Map<String, Comando> shortcuts;
+    private Comando ultimaAccion;
+
+    public EditorDeTexto() {
+        this.shortcuts = new HashMap<>();
     }
 
-    public void ejecutarComando() {
-        this.comando.ejecutar();
+    public void modificarShortcut(String combinacion, Comando operacion) {
+        this.shortcuts.put(combinacion, operacion);
+    }
+
+    public void accionarShortcut(String combinacion) {
+        Comando operacion = this.shortcuts.get(combinacion);
+        operacion.ejecutar();
+        this.ultimaAccion = operacion;
     }
 }

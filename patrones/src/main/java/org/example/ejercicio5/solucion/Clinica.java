@@ -6,10 +6,10 @@ public class Clinica {
         Inyeccion inyeccion = paciente.esAlergicoIbuprofeno() ? new InyeccionDeParacetamol() : new InyeccionDeIbuprofeno();
 
         if (paciente.tieneDolorDePanza()) {
-            inyeccion = new InyeccionConPropinox().añadirA(inyeccion);
+            inyeccion = new InyeccionConProtectorGastrico().añadirA(inyeccion);
         }
         if (paciente.tieneVomitos()) {
-            inyeccion = new InyeccionConReliveran().añadirA(inyeccion);
+            inyeccion = new InyeccionConAntivomitos().añadirA(inyeccion);
         }
 
         inyeccion.aplicar(paciente);

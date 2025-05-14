@@ -1,4 +1,4 @@
-package org.example.ejercicio10.solucion;
+package org.example.ejercicio10.inicial;
 
 public class Portapapeles {
     public void copiar() {

@@ -2,25 +2,24 @@ package org.example.ejercicio3.solucion;
 
 public class Main {
     public static void main(String[] args) {
-        PanConSemillas pan = new PanConSemillas();
+        Pan panSemillas = new PanConSemillas();
+        Pan panRegular = new PanRegular();
 
-        Mayonesa mayonesa = new Mayonesa();
-        Ketchup ketchup = new Ketchup();
+        Aderezo mayonesa = new Mayonesa();
+        Fiambre salame = new Salame();
+        Fiambre queso = new Queso();
 
-        Jamon jamon = new Jamon();
-        Queso queso = new Queso();
-
-        Lechuga lechuga = new Lechuga();
-        Tomate tomate = new Tomate();
-
-        SandwichBuilder sandwichBuilder = new SandwichBuilder();
-
-        Sandwich sandwich = sandwichBuilder
-                .ponerPan(pan)
+        Sandwich sandwichQuesoYTomate = new SandwichBuilder(panSemillas)
+                .ponerVerdura(new Tomate())
                 .ponerFiambre(queso)
-                .ponerFiambre(jamon)
-                .ponerAderezo(ketchup)
                 .ponerAderezo(mayonesa)
                 .getSandwich();
+
+        // Se deja a medio a hacer tambien
+        SandwichBuilder sandwichSalameYQuesoBuilder = new SandwichBuilder(panRegular)
+                .ponerFiambre(queso);
+
+        Sandwich sandwichSalameYQueso = sandwichSalameYQuesoBuilder.ponerFiambre(salame).getSandwich();
+
     }
 }

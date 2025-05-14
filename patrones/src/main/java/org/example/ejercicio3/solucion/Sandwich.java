@@ -1,5 +1,6 @@
 package org.example.ejercicio3.solucion;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich {
@@ -7,31 +8,27 @@ public class Sandwich {
     private List<Verdura> verduras;
     private List<Fiambre> fiambres;
     private List<Aderezo> aderezos;
-    public Sandwich(Pan pan, List<Verdura> verduras, List<Fiambre> fiambres, List<Aderezo> aderezos) {
+
+    public Sandwich(Pan pan) {
         this.pan = pan;
-        this.verduras = verduras;
-        this.fiambres = fiambres;
-        this.aderezos = aderezos;
-    }
-
-    public Sandwich() {
-
+        this.verduras = new ArrayList<>();
+        this.fiambres = new ArrayList<>();
+        this.aderezos = new ArrayList<>();
     }
 
     public void setPan(Pan pan) {
         this.pan = pan;
     }
 
-
-    public void setFiambre(Fiambre fiambre) {
+    public void addFiambre(Fiambre fiambre) {
         this.fiambres.add(fiambre);
     }
 
-    public void setAderezo(Aderezo aderezo) {
+    public void addAderezo(Aderezo aderezo) {
         this.aderezos.add(aderezo);
     }
 
-    public void setVerdura(Verdura verdura) {
+    public void addVerdura(Verdura verdura) {
         this.verduras.add(verdura);
     }
 }
