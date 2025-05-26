@@ -1,4 +1,4 @@
-package tradicional.ej4contadorCondVars;
+package tradicional;
 
 public class Contador {
     private int contador;

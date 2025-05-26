@@ -6,18 +6,13 @@
 
     <parent>
         <groupId>org.fiuba.algo3</groupId>
-        <artifactId>ejercicios-clases</artifactId>
+        <artifactId>concurrencia</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.fiuba.algo3</groupId>
-    <artifactId>concurrencia</artifactId>
+    <artifactId>ejercicios-concu</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>ejemplos-concu</module>
-        <module>ejercicios-concu</module>
-    </modules>
     
 </project>

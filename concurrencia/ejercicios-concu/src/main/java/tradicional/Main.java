@@ -1,4 +1,4 @@
-package tradicional.ej4contadorCondVars;
+package tradicional;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
